@@ -45,8 +45,6 @@ batch = {'image0': img0, 'image1': img1}
 
 # Inference with LoFTR and get prediction
 with torch.no_grad():
-    paths = [("LoFTR", "loftr_coarse", "layers", "0", "attention")]
-    path = ('LoFTR', 'loftr_coarse', 'layers', '0', 'attention')
     with torchprof.Profile(matcher, use_cuda=True, profile_memory=True) as prof:
         matcher(batch)
     print(prof)
