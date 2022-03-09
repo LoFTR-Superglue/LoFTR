@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://www.highcharts.com/highslide/highslide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/highcharts.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/highcharts-more.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/modules/heatmap.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/modules/exporting.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+                <div id="container" style="width:850px;height:500px;">Loading....</div>
+
+
+    <script>
+        $(function(){
+
+
+
+
+
+            Highcharts.setOptions({"global": {}, "lang": {}});
+            var option = {"chart": {"renderTo": "container", "width": 850, "height": 500}, "colors": {}, "credits": {"enabled": false}, "drilldown": {}, "exporting": {}, "labels": {}, "legend": {}, "loading": {}, "navigation": {}, "pane": {}, "plotOptions": {"pie": {"allowPointSelect": true, "cursor": "pointer", "showInLegend": true}}, "series": {}, "subtitle": {}, "title": {"text": "Profile"}, "tooltip": {"pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>}"}, "xAxis": {}, "yAxis": {}};
+
+
+ 
+
+            var chart = new Highcharts.Chart(option);
+
+            var data = [{"data": [{"id": 2, "name": ["LoFTR", "backbone", "conv1"], "y": 3285.0780000000004, "colors": "Highcharts.getOptions().colors[2]"}, {"id": 54, "name": ["LoFTR", "backbone", "layer2_outconv2", "1"], "y": 558.6600000000001, "colors": "Highcharts.getOptions().colors[54]"}, {"id": 57, "name": ["LoFTR", "backbone", "layer1_outconv"], "y": 532.863, "colors": "Highcharts.getOptions().colors[57]"}, {"id": 67, "name": ["LoFTR", "loftr_coarse", "layers", "0", "q_proj"], "y": 1065.1050000000002, "colors": "Highcharts.getOptions().colors[67]"}, {"id": 70, "name": ["LoFTR", "loftr_coarse", "layers", "0", "attention"], "y": 1066.698, "colors": "Highcharts.getOptions().colors[70]"}, {"id": 82, "name": ["LoFTR", "loftr_coarse", "layers", "1", "attention"], "y": 927.1300000000001, "colors": "Highcharts.getOptions().colors[82]"}, {"id": 94, "name": ["LoFTR", "loftr_coarse", "layers", "2", "attention"], "y": 841.2599999999993, "colors": "Highcharts.getOptions().colors[94]"}, {"id": 106, "name": ["LoFTR", "loftr_coarse", "layers", "3", "attention"], "y": 838.9649999999997, "colors": "Highcharts.getOptions().colors[106]"}, {"id": 118, "name": ["LoFTR", "loftr_coarse", "layers", "4", "attention"], "y": 877.224, "colors": "Highcharts.getOptions().colors[118]"}, {"id": 130, "name": ["LoFTR", "loftr_coarse", "layers", "5", "attention"], "y": 1010.0659999999996, "colors": "Highcharts.getOptions().colors[130]"}, {"id": 142, "name": ["LoFTR", "loftr_coarse", "layers", "6", "attention"], "y": 913.4509999999997, "colors": "Highcharts.getOptions().colors[142]"}, {"id": 154, "name": ["LoFTR", "loftr_coarse", "layers", "7", "attention"], "y": 826.2990000000004, "colors": "Highcharts.getOptions().colors[154]"}, {"id": 162, "name": ["LoFTR", "coarse_matching"], "y": 9232.03300000001, "colors": "Highcharts.getOptions().colors[162]"}, {"id": 172, "name": ["LoFTR", "loftr_fine", "layers", "0", "attention"], "y": 1475.8279999999995, "colors": "Highcharts.getOptions().colors[172]"}, {"id": 184, "name": ["LoFTR", "loftr_fine", "layers", "1", "attention"], "y": 961.508000000001, "colors": "Highcharts.getOptions().colors[184]"}, {"id": 192, "name": ["LoFTR", "fine_matching"], "y": 1758.968000000002, "colors": "Highcharts.getOptions().colors[192]"}], "type": "pie", "name": "Cost:"}];
+            var dataLen = data.length;
+            for (var ix = 0; ix < dataLen; ix++) {
+                chart.addSeries(data[ix]);
+            }
+ 
+
+
+
+
+
+
+
+        
+    });
+        </script>
+
+    </body>
+</html>
