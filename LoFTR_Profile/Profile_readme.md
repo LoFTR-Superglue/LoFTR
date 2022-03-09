@@ -64,4 +64,4 @@ with torch.no_grad():
     H.add_data_set(data, 'pie', "Cost:")
     H.save_file('LoFTR_Profile')
 ```
-![LoFTR_porfile_PieChart](LoFTR_Profile/results/LoFTR_Profile_pie.png)
+![LoFTR_porfile_PieChart](results/LoFTR_Profile_pie.png)
