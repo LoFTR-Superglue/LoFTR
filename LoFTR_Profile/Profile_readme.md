@@ -1,6 +1,12 @@
 # LoFTR Profile
 ### [Project Page](https://github.com/zju3dv/LoFTR) | [Paper](https://arxiv.org/pdf/2104.00680.pdf)
 
+# Torchprof guidance
+```shell
+Pleace follow the author's guidance: https://github.com/awwong1/torchprof
+```
+
+# Drawing tools： HighCharts
 ```shell
 #For the profile only
 pip install python-highcharts
